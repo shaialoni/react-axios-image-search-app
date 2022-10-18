@@ -1,4 +1,5 @@
 import React from 'react'
+import { Container } from 'semantic-ui-react'
 
 const ImageList = ({images}) => {
     
@@ -10,9 +11,9 @@ const ImageList = ({images}) => {
         />
     ))
     return (
-        <div>
+        <Container>
            {showImages}
-        </div>
+        </Container>
     )
 }
 
