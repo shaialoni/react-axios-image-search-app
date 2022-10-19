@@ -23,7 +23,7 @@ const SearchInput = ({onSearchSubmit}) => {
                     <div className='ui massive icon input'>
                     <input 
                         type='text' 
-                        placeholder='search...' 
+                        placeholder='search images' 
                         onChange={(e) => setEntry(e.target.value )}
                         value={entry}
                     />
