@@ -14,7 +14,7 @@ const SearchInput = ({onSearchSubmit}) => {
     }
 
     return(
-        <div className='ui segment'>
+        <div className='ui segment' style={{width: '350px'}}>
             <form 
                 onSubmit={onFormSubmit}
                 className='ui form'

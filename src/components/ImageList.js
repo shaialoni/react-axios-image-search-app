@@ -1,19 +1,22 @@
 import React from 'react'
-import { Container } from 'semantic-ui-react'
+import { Card, CardImg } from 'react-bootstrap'
 
 const ImageList = ({images}) => {
     
     const showImages = images.map(image => (
-        <img 
-            key={image.id} 
-            src={image.webformatURL} 
-            alt=''
-        />
-    ))
+            <Card style={{marginLeft: '10px', marginTop: '10px'}}>
+                <CardImg
+                    key={image.id} 
+                    src={image.webformatURL}
+                    alt=''
+                />
+            </Card>
+        )
+    )
     return (
-        <Container>
+        <div className='d-flex flex-nowrap'>
            {showImages}
-        </Container>
+        </div>
     )
 }
 
